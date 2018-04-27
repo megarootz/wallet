@@ -84,7 +84,7 @@ QVariant DepositModel::headerData(int _section, Qt::Orientation _orientation, in
     case COLUMN_AMOUNT:
       return tr("Amount");
     case COLUMN_INTEREST:
-      return tr("Reward");
+      return tr("Interest");
     case COLUMN_SUM:
       return tr("Sum");
     case COLUMN_YEAR_RATE:

@@ -1,9 +1,7 @@
- # DigitalNoteWallet
-The GUI DigitalNoteWallet
- # Contributing to the DigitalNoteXDN Project
+ # AmazoniaCoin Wallet
+The GUI wallet
+ # Contributing to the AmazoniaCoin Project
  
- Always check the latest README.md at https://github.com/DigitalNoteXDN/digitalnotewallet/blob/master/README.md for updated instructions.
-
 The new dev team are continually looking for skilled blockchain developers in the Cryptonight space. Not everyone is able to do this so do not dispair,
 as a start, we encourage you to help test the software, and report bugs to the team. Please see below for some guidelines. 
 
@@ -11,11 +9,6 @@ Things will be a bit slow to start off, so do not get impatient if your pull req
 
 ## General guidelines
 
-The "DigitalNoteXDN core Team" is defined as the following GitHub users:
-
- 	AuCRHI
- 	DrCryptoToad
-	rainmanp7
   
 At the moment we are using preferred builds to develop and test software.
 These are based on Mac OS Sierra, Mac OS High Sierra, Windows 10 64bit and Linux (Lubuntu ver 17.1).
@@ -57,7 +50,7 @@ Please see https://rfc.zeromq.org/spec:42/C4
 
 ## License
 
-Copyright (c) 2018 The DigitalNote Project 
+Copyright (c) 2018 AmazoniaCoin
 
 This is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 

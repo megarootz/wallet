@@ -205,7 +205,7 @@ elseif (UNIX)
     set(PLATFORM_DIR OSX)
     set(MACOSX_BUNDLE_INFO_STRING "Cryptonote GUI wallet")
     set(MACOSX_BUNDLE_LONG_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
-    set(MACOSX_BUNDLE_BUNDLE_NAME DigitalNoteWallet)
+    set(MACOSX_BUNDLE_BUNDLE_NAME CryptonoteWallet)
     set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
     set(MACOSX_BUNDLE_BUNDLE_VERSION "$${VERSION_VERSION}.${VERSION_MINOR}.${VERSION_PATCH}")
 
@@ -259,8 +259,8 @@ qt5_use_modules(${PROJECT_NAME} Widgets Gui Network)
 
 set(CPACK_PACKAGE_NAME ${CN_PROJECT_NAME})
 set(CPACK_PACKAGE_VERSION ${CN_VERSION})
-set(CPACK_PACKAGE_VENDOR "XDN-project")
-set(CPACK_PACKAGE_CONTACT "http://digitalnote.org")
+set(CPACK_PACKAGE_VENDOR "AMZ-project")
+set(CPACK_PACKAGE_CONTACT "http://amazoniacoin.org")
 set(CPACK_STRIP_FILES ON)
 if (APPLE)
     set(CPACK_GENERATOR DragNDrop)
@@ -270,29 +270,29 @@ elseif (UNIX)
     find_program(RPMBUILD rpmbuild)
 
     install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
-    install(FILES src/digitalnotewallet.desktop DESTINATION share/applications)
-    install(FILES src/images/cryptonote.png DESTINATION share/pixmaps RENAME digitalnote.png)
-    install(FILES copyright DESTINATION share/doc/digitalnotewallet)
+    install(FILES src/amazoniacoinwallet.desktop DESTINATION share/applications)
+    install(FILES src/images/cryptonote.png DESTINATION share/pixmaps RENAME amazoniacoin.png)
+    install(FILES copyright DESTINATION share/doc/amazoniacoinwallet)
 
     if (NOT RPMBUILD)
         set(CPACK_GENERATOR DEB)
         set(CPACK_DEBIAN_PACKAGE_NAME ${CPACK_PACKAGE_NAME})
         set(CPACK_SYSTEM_NAME amd64)
-        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <xdnproject@tutanota.com>")
+        set(CPACK_DEBIAN_PACKAGE_MAINTAINER "${CPACK_PACKAGE_VENDOR} <admin@amazoniacoin.org>")
         set(CPACK_DEBIAN_PACKAGE_SECTION Office)
         set(CPACK_DEBIAN_PACKAGE_SHLIBDEPS ON)
-        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "DigitalNote XDN wallet
- DigitalNote is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. XDN is
- open-source; its design is public, nobody owns or controls XDN and
+        set(CPACK_DEBIAN_PACKAGE_DESCRIPTION "AmazonCoin AMZ wallet
+ AmazonCoin is a decentralized privacy protected peer-to-peer
+ cryptocurrency and untraceable encrypted messaging system. AMZ is
+ open-source; its design is public, nobody owns or controls AMZ and
  everyone can take part.
  .
- Features of the DigitalNote wallet listed bellow:
+ Features of the AmazonCoin wallet listed bellow:
  * Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
    made with QT and open-source.
- * Instant anonymous XDN transfers and transfers notifications
+ * Instant anonymous AMZ transfers and transfers notifications
  * Instant untraceable encrypted messages transfers and notifications
- * Safe and secure, full XDN network node in wallet, fast network
+ * Safe and secure, full AMZ network node in wallet, fast network
    syncronization.
  * Wallet encryption
  * Fast and hardware optimized
@@ -305,19 +305,19 @@ set(CPACK_PACKAGE_FILE_NAME "${CPACK_DEBIAN_PACKAGE_NAME}-${CPACK_PACKAGE_VERSIO
         set(CPACK_RPM_PACKAGE_LICENSE "MIT")
         set(CPACK_RPM_PACKAGE_GROUP Office)
         set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtbase >= 5.3.2, qt5-qtbase-gui >= 5.3.2")
-        set(CPACK_RPM_PACKAGE_SUMMARY "DigitalNote XDN wallet")
-        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source DigitalNote XDN GUI wallet
- DigitalNote is a decentrilized privacy protected peer-to-peer
- cryptocurrency and untraceable encrypted messaging system. XDN is
- open-source; its design is public, nobody owns or controls XDN and
+        set(CPACK_RPM_PACKAGE_SUMMARY "AmazonCoin AMZ wallet")
+        set(CPACK_RPM_PACKAGE_DESCRIPTION "Open-source AmazonCoin AMZ GUI wallet
+ AmazonCoin is a decentralized privacy protected peer-to-peer
+ cryptocurrency and untraceable encrypted messaging system. AMZ is
+ open-source; its design is public, nobody owns or controls AMZ and
  everyone can take part.
 
- Features of the DigitalNote wallet listed bellow:
+ Features of the AmazonCoin wallet listed bellow:
  *Classic Bitcoin alike appearance in CryptoNote based cryptocurrency,
     made with QT and open-source.
- *Instant anonymous XDN transfers and transfers notifications
+ *Instant anonymous AMZ transfers and transfers notifications
  *Instant untraceable encrypted messages transfers and notifications
- *Safe and secure, full XDN network node in wallet, fast network
+ *Safe and secure, full AMZ network node in wallet, fast network
     syncronization.
  *Wallet encryption
  *Fast and hardware optimized
