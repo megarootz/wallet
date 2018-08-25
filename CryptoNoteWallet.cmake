@@ -1,5 +1,5 @@
 
-set(CN_PROJECT_NAME "CVcredit")
-set(CN_CURRENCY_DISPLAY_NAME "CVcredit")
-set(CN_CURRENCY_TICKER "CV")
+set(CN_PROJECT_NAME "Xmynero")
+set(CN_CURRENCY_DISPLAY_NAME "Xmynero")
+set(CN_CURRENCY_TICKER "Xmyro")
 set(CN_VERSION 1.0.0-beta)
